@@ -1,7 +1,6 @@
 import React from 'react';
 import "./App.css";
 import Menu from './components/Menu';
-import Socials from './components/Menu/Socials';
 import Intro from './components/Intro';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -13,9 +12,6 @@ function App() {
     <div style={{ backgroundColor: '#000D18' }} className="py-20 lg:py-40">
       <div className="mx-auto w-full px-6" style={{ maxWidth: '1100px' }}>
         <div className="lg:fixed">
-          <div className='hidden lg:block'>
-            <Socials />
-          </div>
           <Intro />
           <div className='hidden lg:block'>
             <Menu />
