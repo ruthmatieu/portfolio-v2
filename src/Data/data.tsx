@@ -28,7 +28,7 @@ export const experience = [
         role: "Licensed Insurance Agent",
         company: "New York Life Insurance Co.",
         companyWebsite: "https://www.newyorklife.com/",
-        duration: "2028 - 2019",
+        duration: "2018 - 2019",
         description: "Advocated for the creation of a new internal search engine (ARC/LINK Focus Group) that increased employee productivity as well as led the Cultural Appreciation Group which focused on appreciation and celebration of diversity in the workplace.",
     }
 ]
@@ -37,7 +37,7 @@ export const projects = [
     {
         id: 0,
         title: "Sugar'd Bare",
-        description: "Design and developed for a small business. Utilizes TypeScript, React, and Tailwind CSS for a professional and visually stunning online presence.",
+        description: "Designed and developed for a small business. Utilizes TypeScript, React, and Tailwind CSS for a professional and visually stunning online presence.",
         image: sugardBare,
         link: "https://sugardbare.com/"
     },

@@ -42,13 +42,13 @@ const Menu = () => {
       </a>
       <a
         href="#experience"
-        className={activeMenu === "experience" ? "mb-6 block border-b-4 border-teal-200 w-24" : "mb-6 block"}
+        className={activeMenu === "experience" ? "mb-6 block border-b-4 border-teal-200 w-20" : "mb-6 block"}
       >
         Experience
       </a>
       <a
         href="#projects"
-        className={activeMenu === "projects" ? "mb-6 block border-b-4 border-teal-200 w-14" : "block"}
+        className={activeMenu === "projects" ? "mb-6 block border-b-4 border-teal-200 w-16" : "block"}
       >
         Projects
       </a>
