@@ -1,4 +1,4 @@
-import { experience } from "../Data/data";
+import { experience } from "../data";
 
 const Experience = () => {
   return (
@@ -11,7 +11,7 @@ const Experience = () => {
             rel="noreferrer"
             className="group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5"
             >
-            <div className="p-8" style={{ color: "#888D91" }}>
+            <div className="p-4 lg:p-8" style={{ color: "#888D91" }}>
                 <div className="flex items-center">
                     <p className="font-medium mb-1 group-hover:underline" style={{ color: "#98FBFC" }}>
                     {item.role} - <span style={{ color: "#158CE1" }}>{item.company}</span>
@@ -60,27 +60,27 @@ const Experience = () => {
                         </span>
                     ))}
                 </div>
-                <p className="text-xs flex space-x-2 mb-2">
-                {item.techStack?.slice(0,6).map((tech) => (
-                    <span
-                    key={tech}
-                    className="px-2 py-1 rounded-lg"
-                    style={{ backgroundColor: "#3D5684", color: "#98FBFC" }}
-                    >
-                    {tech}
-                    </span>
-                ))}
+                <p className="text-xs flex flex-wrap space-x-2">
+                    {item.techStack?.slice(0,6).map((tech) => (
+                        <span
+                        key={tech}
+                        className="px-2 py-1 rounded-lg mb-2"
+                        style={{ backgroundColor: "#3D5684", color: "#98FBFC" }}
+                        >
+                        {tech}
+                        </span>
+                    ))}
                 </p>
-                <p className="text-xs flex space-x-2">
-                {item.techStack?.slice(5,9).map((tech) => (
-                    <span
-                    key={tech}
-                    className="px-2 py-1 rounded-lg"
-                    style={{ backgroundColor: "#3D5684", color: "#98FBFC" }}
-                    >
-                    {tech}
-                    </span>
-                ))}
+                <p className="text-xs flex flex-wrap space-x-2">
+                    {item.techStack?.slice(5,9).map((tech) => (
+                        <span
+                        key={tech}
+                        className="px-2 py-1 rounded-lg"
+                        style={{ backgroundColor: "#3D5684", color: "#98FBFC" }}
+                        >
+                        {tech}
+                        </span>
+                    ))}
                 </p>
                 
             </div>

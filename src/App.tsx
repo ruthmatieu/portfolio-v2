@@ -1,8 +1,7 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
 import "./App.css";
 import Menu from './components/Menu';
+import Socials from './components/Menu/Socials';
 import Intro from './components/Intro';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -11,22 +10,19 @@ import BlogPosts from './components/BlogPosts';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#000D18' }} className="py-40">
+    <div style={{ backgroundColor: '#000D18' }} className="py-20 lg:py-40">
       <div className="mx-auto w-full px-6" style={{ maxWidth: '1100px' }}>
-        <div className="md:fixed">
-          <ul className='flex space-x-8 mb-20'>
-                <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-                <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-                <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-                <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-            </ul>
+        <div className="lg:fixed">
+          <div className='hidden lg:block'>
+            <Socials />
+          </div>
           <Intro />
-          <div className='hidden md:block'>
+          <div className='hidden lg:block'>
             <Menu />
           </div>
          
         </div>
-        <div className="md:ml-[500px]">
+        <div className="lg:ml-[500px]">
           <About />
           <Experience />
           <Projects />

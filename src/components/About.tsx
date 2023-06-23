@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div id="about" className="pb-16 ml-8" style={{color: "#888D91"}}>
+        <div id="about" className="pb-16 m-4 lg:ml-8 pt-16 lg:pt-0" style={{color: "#888D91"}}>
             <p className="mb-2">
                 With a passion stemmed from the discovery of MySpace (🤣 remember that?), I am driven to develop intuitive
                 and user-friendly interfaces that consistently deliver exceptional user experiences.

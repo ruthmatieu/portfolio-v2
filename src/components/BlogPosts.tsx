@@ -1,4 +1,4 @@
-import { posts } from "../Data/data";
+import { posts } from "../data";
 
 const BlogPosts = () => {
     return (
@@ -11,7 +11,7 @@ const BlogPosts = () => {
                         rel="noreferrer"
                         className="group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5"
                     >
-                        <div className="p-8" style={{ color: "#888D91" }}>
+                        <div className="p-4 lg:p-8" style={{ color: "#888D91" }}>
                             <div className="flex items-center">
                                 <p className="group-hover:underline" style={{ color: "#98FBFC" }}>{post.title}</p>
                                 <svg 

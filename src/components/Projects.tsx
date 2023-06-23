@@ -1,4 +1,4 @@
-import { projects } from "../Data/data";
+import { projects } from "../data";
 
 const Projects = () => {
     return (
@@ -9,13 +9,13 @@ const Projects = () => {
                         href={item.link} 
                         target="_blank" 
                         rel="noreferrer" 
-                        className="flex p-8 group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5" 
+                        className="lg:flex p-4 lg:p-8 group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5" 
                         style={{color: "#888D91"}} 
                     >
                         <img src={item.image} alt="" className="rounded w-32 h-16"/>
-                        <div className="ml-4">
+                        <div className="lg:ml-4">
                             <div className="flex items-center">
-                                <p className="group-hover:underline" style={{color: "#98FBFC"}}>{item.title}</p>
+                                <p className="group-hover:underline mt-3 lg:mt-0" style={{color: "#98FBFC"}}>{item.title}</p>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 24 24" 
