@@ -1,4 +1,4 @@
-import { posts } from "../data";
+import { posts } from "../Data/data";
 
 const BlogPosts = () => {
     return (
