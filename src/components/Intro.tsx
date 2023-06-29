@@ -1,4 +1,4 @@
-import headshot from "../images/headshot.png";
+import headshot from "../images/headshot.jpeg";
 import Socials from "./Menu/Socials";
 
 const Intro = () => {
